@@ -21,7 +21,7 @@ steps:
 
   - label: "This step shouldnt still run"
     command: echo "everything passed!"
-    key: "Everything passed"
+    key: "Everything-passed"
     depends_on: "failing-step"
     
 
