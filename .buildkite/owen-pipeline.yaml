@@ -1,4 +1,8 @@
 steps:
+  - label: "Sanity check"
+    command: pwd && ls
+    key: "pre-build"
+
   - label: "This is the first step"
     command: ./buildkite/print_numbers.sh
     key: "build"
