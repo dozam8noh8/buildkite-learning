@@ -4,7 +4,7 @@ steps:
     key: "pre-build"
 
   - label: "This is the first step"
-    command: ./buildkite/print_numbers.sh
+    command: ./.buildkite/print_numbers.sh
     key: "build"
   
   - label: "This will be done after numbers are printed"
