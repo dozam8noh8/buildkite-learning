@@ -13,15 +13,15 @@ steps:
 
   - label: "This step will fail"
     command: ./spaghetti
-    key: "failing step"
+    key: "failing-step"
 
   - label: "This step might still run"
     command: echo "still running"
-    key: "still running"
+    key: "still-running"
 
   - label: "This step shouldnt still run"
     command: echo "everything passed!"
     key: "Everything passed"
-    depends_on: "failing step"
+    depends_on: "failing-step"
     
 
