@@ -10,5 +10,18 @@ steps:
   - label: "This will be done after numbers are printed"
     command: echo "All done"
     key: "finish"
+
+  - label: "This step will fail"
+    command: ./spaghetti
+    key: "failing step"
+
+  - label: "This step might still run"
+    command: echo "still running"
+    key: "still running"
+
+  - label: "This step shouldnt still run"
+    command: echo "everything passed!"
+    key: "Everything passed"
+    depends_on: "failing step"
     
 
