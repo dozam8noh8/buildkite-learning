@@ -1,0 +1,10 @@
+steps:
+  - label: "This is the first step"
+    command: ./print_numbers.sh
+    key: "build"
+  
+  - label: "This will be done after numbers are printed"
+    command: echo "All done"
+    key: "finish"
+    
+
